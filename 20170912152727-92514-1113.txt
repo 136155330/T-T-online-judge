@@ -1,0 +1,23 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int i;int j;
+int hzb(int n)
+{
+    for(i=2;i<=sqrt(n);i++)
+    {
+        if(n%i==0)return 0;
+    }  return 1;
+}
+int main()
+{
+    int m;
+    while(cin>>m)
+    {
+        for(j=2;j<=m;j++)
+        {
+            if(hzb(j)!=0)cout<<j<<endl;
+        }
+    }
+    return 0;
+}

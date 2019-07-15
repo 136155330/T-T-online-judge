@@ -1,0 +1,44 @@
+#include<iostream>
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+using namespace std;
+char x[10000];
+int main()
+{
+    int y;
+    int z;
+    int h;
+    int m;
+    int j;
+    int n;
+    int i;
+    int r;
+    int g;
+    while(cin>>r)
+    {
+        for(g=0; g<r; g++)
+        {
+            while(cin>>n)
+            {
+                y=0;
+                h=0;
+                m=0;
+                if(n%8==0)y++;
+                itoa(n,x,10);
+                z=strlen(x);
+                for(i=0; i<z; i++)
+                {
+                    j=x[i]-'0';
+                    h=h+j;
+                    m=m+j*j;
+                }
+                if(h%8==0)y++;
+                if(m%8==0)y++;
+                if(y!=0)cout<<"Lucky number!"<<endl;
+                if(y==0)cout<<"What a pity!"<<endl;
+            }
+        }
+    }
+    return 0;
+}

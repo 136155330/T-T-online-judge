@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int x[31][31];
+int main()
+{
+  int i;int j;int n;
+  while(cin>>n)
+  {
+
+
+  for(i=0;i<n;i++)
+  {
+      for(j=0;j<=i;j++)
+      {
+          x[i][0]=1;
+          x[i][i]=1;
+          if(j!=0&&j!=i)
+          x[i][j]=x[i-1][j-1]+x[i-1][j];
+      }
+  }
+  for(i=0;i<n;i++)
+  {
+      for(j=0;j<=i;j++)
+      {
+          if(j==i)cout<<x[i][j]<<endl;
+          else
+            cout<<x[i][j]<<" ";
+      }
+
+  }
+  cout<<endl;
+  }
+  return 0;
+
+}

@@ -1,0 +1,26 @@
+#include<iostream>
+#include<string.h>
+#include<stdio.h>
+using namespace std;
+char x[1000000000];
+int main()
+{int t;int h;int n;int i;int j;
+    while(cin>>t)
+    {cin.get();
+        for(i=0;i<t;i++)
+        {n=0;
+
+            gets(x);
+            h=strlen(x);
+            for(j=0;j<=h;j++)
+            {
+                if(x[j]>='0'&&x[j]<='9')
+                    n++;
+            }
+            cout<<n<<endl;
+
+        }
+        if(i==t)break;
+    }
+    return 0;
+}

@@ -1,0 +1,52 @@
+#include<iostream>
+#include<string.h>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    int i;int j;int t;int n;int a;int b;
+    int x[55];int y;char z[55];int e;int f;int h;
+    while(cin>>t)
+    {
+        for(i=0;i<t;i++)
+        {
+            while(cin>>n)
+            {memset(x,0,sizeof(x));
+                for(j=0;j<n;j++)
+            {
+                y=0;
+              cin>>a>>b;
+                  x[a]+=b;
+                  if(a>=y)y=a;
+            }
+            for(i=0;i<=31;i++)
+            {
+                if(x[i]!=0)
+                {
+                     {i=i+2;
+                      z[0]='>';
+                      z[1]='+';
+                      z[i-1]='>';
+                      z[i-2]='+';
+                     for(e=2;e<(i-2);e++)
+                     {
+                        z[e]='-';
+                     }
+                     for(f=0;f<x[i-2];f++)
+                     {
+                         for(h=0;h<i;h++)
+                         {
+                             cout<<z[h];
+                         }
+                         cout<<endl;
+                     }
+                     i=i-2;
+                     cout<<endl;
+                 }
+                }
+            }
+            }
+        }
+    }
+    return 0;
+}

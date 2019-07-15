@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cctype>
+using namespace std;
+int main()
+{int t;
+int i;
+i=0;int c;
+char a;int b;
+cin>>t;
+while(cin>>a>>b)
+{if(islower(a))
+c=96-(int)a+b;
+else
+c=(int)a-64+b;
+cout<<c<<endl;
+i++;
+if(i>=t)break;
+}
+return 0;}

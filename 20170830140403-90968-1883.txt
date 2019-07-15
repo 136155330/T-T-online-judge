@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int s1,s2,d,a1,a2;
+while(cin>>s1>>s2)
+{
+
+d=(22*s2-222*s1)/122100;
+a1=(110*s2-12210*s1)/(-122100);
+a2=a1+d;
+cout<<a1<<" "<<a2<<endl;
+}
+return 0;
+}

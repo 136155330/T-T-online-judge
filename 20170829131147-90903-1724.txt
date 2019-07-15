@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int l,v0,v1,n;
+while(cin>>l>>v0>>v1>>n)
+{
+int t;
+t=l/(v1);
+if((t+2)<n)
+cout<<"NO"<<endl;
+else
+cout<<"YES"<<endl;
+}
+return 0;
+}

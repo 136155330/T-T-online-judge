@@ -1,0 +1,49 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int x[1000];int y[1000];
+int main()
+{
+int t;int i;int n;int j;int a;int b;int c;int z;int r;int tem;
+while(cin>>t)
+{
+    for(i=0;i<t;i++)
+    {
+      while(cin>>n)
+      {memset(x,0,sizeof(x));
+          for(j=0;j<n;j++)
+          {
+             cin>>a>>b>>c;
+             if(a>=b&&a>=c)x[j]=a;
+             if(b>=c&&b>=a)x[j]=b;
+             if(c>=a&&c>=b)x[j]=c;
+          }
+          for(z=0;z<n;z++)
+          {
+              y[z]=x[z];
+          }
+        for(j=n-1;j!=0;j--)
+       {for(r=0;r<j;r++)
+      {if(y[r]>y[r+1])
+      {tem=y[r+1];
+      y[r+1]=y[r];
+      y[r]=tem;
+}
+}
+}
+for(j=0;j<n;j++)
+{
+    for(z=0;z<n;z++)
+    {
+        if(x[j]==y[z]&&j!=n-1)cout<<n-z<<" ";
+        if(x[j]==y[z]&&j==n-1)cout<<n-z;
+    }
+}
+
+  cout<<endl;
+
+      }
+    }
+}
+return 0;
+}

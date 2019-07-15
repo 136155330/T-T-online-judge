@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b,total = 0;
+    char c,str[4];
+    while (scanf("%d%c%d=%s",&a,&c,&b,str) != EOF)
+    {
+        if (*str != '?')
+        {
+            if (c == '+')
+            {
+                if (a+b == atoi(str))
+                {
+                    total++;
+                }
+            }
+            else
+            {
+                if (a-b == atoi(str))
+                {
+                    total++;
+                }
+            }
+
+        }
+    }
+    printf("%d\n",total);
+    return 0;
+}

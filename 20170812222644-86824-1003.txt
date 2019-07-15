@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{long long n;long long m;long long a;
+cin>>n;
+cin>>m;
+cin>>a;
+long long j;long long g;
+j=m%a;
+g=n%a;
+long long x; long long y;
+if(j!=0)
+x=(m/a)+1;
+else
+x=(m/a);
+if(g!=0)
+y=(n/a)+1;
+else
+y=(n/a);
+cout<<(x*y);
+return 0;
+}

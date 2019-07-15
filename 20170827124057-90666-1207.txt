@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{int n;int a;int b;int d;
+while (cin>>n)
+{a=0;b=0;d=0;
+    if(n==0)break;
+while(1)
+{a=n/3;
+b=n%3;
+d+=a;
+n=b+a;
+if(n==2)d=d+1;
+if(n<=2)break;
+}
+cout<<d<<endl;}
+return 0;
+}

@@ -1,0 +1,17 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{double t,u,v,w,l,i;
+while(cin>>t)
+{
+for(i=0;i<t;i++)
+{cin>>u>>v>>w>>l;
+double x;
+x=l/(u+v);
+double y;
+y=x*w;
+cout<<fixed<<setprecision(3)<<y<<endl;
+}}
+return 0;
+}

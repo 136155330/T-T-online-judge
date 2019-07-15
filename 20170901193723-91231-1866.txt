@@ -1,0 +1,18 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+    char x[1000];int y;int z;int h;
+    while(cin>>x)
+    {
+        y=strlen(x);
+        z=x[y-3]*100+x[y-2]*10+x[y-1];
+        h=z%8;
+        if(h==0)cout<<"Yes"<<endl;
+        else
+            cout<<"No"<<endl;
+
+    }
+    return 0;
+}

@@ -1,0 +1,25 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int x;int y;int z;int i;int h;int q;int j;
+    while(cin>>x>>y)
+    {q=0;
+        if(x==0&&y==0)break;
+        for(i=(x+1);i<y;i++)
+        {
+            z=i*i+i+41;
+            h=sqrt(z);
+            for(j=2;j<=h;j++)
+            {
+                if(z%j==0)q++;
+            }
+
+        }
+            if(q==0)cout<<"OK"<<endl;
+            else
+                cout<<"Sorry"<<endl;
+    }
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;int b;int i;int p;int x;
+    while(cin>>a>>b)
+    {
+        if(a==0&&b==0)
+        {
+            break;
+        }
+        p=a;
+        x=1;
+        for(i=0;i<b;i++)
+        {
+
+            x=(x*p)%1000;
+        }
+        cout<<x<<endl;
+    }
+    return 0;
+}

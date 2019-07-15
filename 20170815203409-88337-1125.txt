@@ -1,0 +1,12 @@
+#include<iostream>
+#include<math.h>
+#include<iomanip>
+using namespace std;
+int main()
+{double a;double b;
+    while(cin>>a)
+    {b=fabs(a);
+        cout<<fixed<<setprecision(2)<<b<<endl;
+    }
+    return 0;
+}

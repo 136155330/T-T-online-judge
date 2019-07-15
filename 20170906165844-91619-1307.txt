@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+char a[100000];
+char b[100000];
+char c[200000];
+int main()
+{
+    while(cin>>a>>b)
+    {
+       strcpy(c,a);
+       strcat(c,a);
+       if(strstr(c,b)!=0)
+            cout<<"yes"<<endl;
+        else
+            cout<<"no"<<endl;
+    }
+    return 0;
+}

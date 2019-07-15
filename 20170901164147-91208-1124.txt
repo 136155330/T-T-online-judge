@@ -1,0 +1,13 @@
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+using namespace std;
+int main()
+{double r;double v;double x;
+while(cin>>r)
+{    x=pow(r,3);
+    v=(4.0/3.0)*(3.1415927)*x;
+    cout<<fixed<<setprecision(3)<<v<<endl;
+}
+return 0;
+}

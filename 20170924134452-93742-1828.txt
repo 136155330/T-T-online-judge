@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int n,m;int z;int i;int j;
+int main()
+{
+    while(cin>>n)
+    {z=0;j=0;
+        for(i=0;i<=n;i++)
+        {
+            z=z+i;
+        }
+       while(1)
+       {
+           cin>>m;
+           z=z-m;
+           j=j+1;
+           if(j==n-1)break;
+
+       }
+        cout<<z<<endl;
+    }
+    return 0;
+}

@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;int m;int i;int j;int tem;int a;int b;
+    while(cin>>n>>m)
+    {if(n==0&&m==0)break;
+        int x[n+1];
+        for(i=0;i<n;i++)
+        {
+            cin>>x[i];
+        }
+
+        x[n]=m;
+        for(j=n;j!=0;j--)
+        {for(i=0;i<j;i++)
+        {
+            if(x[i]>x[i+1])
+            {
+                tem=x[i+1];
+                x[i+1]=x[i];
+                x[i]=tem;
+            }
+        }
+
+        }
+        for(i=0;i<(n+1);i++)
+        {if(i!=n)
+            cout<<x[i]<<" ";
+            else
+                cout<<x[i];
+        }
+        cout<<endl;
+
+
+    }
+    return 0;
+}

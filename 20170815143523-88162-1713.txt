@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main()
+{int a; int b; int c;int d;
+while(cin>>a>>b)
+{if(a==0&&b==0)break;
+cout<<(a+b)<<endl;}
+while(cin>>c>>d)
+    cout<<(c-d)<<endl;
+    return 0;
+}

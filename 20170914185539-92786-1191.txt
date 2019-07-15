@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int x[35];int i;
+int main()
+{x[0]=1;x[1]=2;x[2]=4;
+    int n;
+    while(cin>>n)
+    {
+        for(i=3;i<n;i++)
+        {
+            x[i]=x[i-1]+x[i-2]+x[i-3];
+        }
+        cout<<x[n-1]<<endl;
+    }
+    return 0;
+}

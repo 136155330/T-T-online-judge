@@ -1,0 +1,18 @@
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    double x1,y1,x2,y2;double d,s,h;
+    while(cin>>x1>>y1>>x2>>y2)
+    {
+        s=x2-x1;
+        h=y2-y1;
+        s=pow(s,2);
+        h=pow(h,2);
+        d=sqrt(s+h);
+        cout<<fixed<<setprecision(2)<<d<<endl;
+    }
+    return 0;
+}

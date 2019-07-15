@@ -1,0 +1,23 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int x;int y;int z;int i;int h;int tem;
+    while(cin>>x>>y)
+    {
+        if(y<x)
+        {
+            tem=y;
+            y=x;
+            x=tem;
+        }
+            z=0;h=0;
+        for(i=x;i<=y;i++)
+        {
+            if(i%2==0)z=z+pow(i,2);
+            if(i%2!=0)h=h+pow(i,3);
+    }
+    cout<<z<<" "<<h<<endl;
+}
+return 0;}

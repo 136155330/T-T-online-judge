@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+char a[10];
+while(gets(a)!=NULL)
+{
+
+puts(a);
+
+
+}
+return 0;
+}

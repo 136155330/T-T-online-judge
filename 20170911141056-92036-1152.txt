@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+#include<iostream>
+using namespace std;
+int main()
+{ char a[200];
+ int n,x,i,t;
+ cin>>n;
+ getchar();
+ while(n--)
+ { t=0;
+  gets(a);
+  x=strlen(a);
+  for(i=0;i<x;i++)
+   if(a[i]<0)
+   t++;
+ cout<<t/2<<endl;
+ }
+ return 0;
+}

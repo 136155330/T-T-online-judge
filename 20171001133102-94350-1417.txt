@@ -1,0 +1,34 @@
+#include<iostream>
+#include<stdio.h>
+#include<string.h>
+using namespace std;
+char x[55];
+int main()
+{
+    int t;int i;int y;int j;int z;
+    while(cin>>t)
+    {getchar();
+        for(i=0;i<t;i++)
+        {
+            while(gets(x)!=NULL)
+            {
+            y=strlen(x);
+            for(j=0;j<y;j++)
+            {
+                if(x[j]=='a'||x[j]=='e'||x[j]=='i'||x[j]=='o'||x[j]=='u')x[j]=x[j]-'a'+'A';
+                if(x[j]=='A'||x[j]=='E'||x[j]=='I'||x[j]=='O'||x[j]=='U')x[j]=x[j];
+                if(x[j]!='a'&&x[j]!='e'&&x[j]!='i'&&x[j]!='o'&&x[j]!='u'&&x[j]!='A'&&x[j]!='E'&&x[j]!='I'&&x[j]!='O'&&x[j]!='U')
+                {
+                    if(x[j]>='a'&&x[j]<='z')x[j]=x[j];
+                    else
+                        x[j]=x[j]-'A'+'a';
+                }
+            }for(z=0;z<y;z++)cout<<x[z];
+            cout<<endl;
+
+            }
+        }
+    }
+    return 0;
+
+}

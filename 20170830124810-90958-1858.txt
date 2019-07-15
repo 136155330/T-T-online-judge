@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x,y,t,a,b,i;
+    while(cin>>t)
+    {for(i=0;i<t;i++)
+{
+        cin>>x>>y;
+        a=2*x-(y/2);
+        b=(y/2)-x;
+        cout<<a<<" "<<b<<endl;}
+    }
+return 0;
+}

@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{int n;
+    while(cin>>n)
+    {
+        int x[n];int i,j;
+        i=2;j=1;
+        while(1)
+        {
+            x[0]=0;
+            x[1]=1;
+            x[2]=3;
+            x[i+1]=x[i]+3+j;
+            j++;
+            i++;
+            if(i>=n)break;
+        }
+        for(i=0;x[i]<=n;i++)
+        {
+            if(x[i]==n)cout<<i<<endl;
+            if(x[i]==n)break;
+        }
+        if(n<x[i])cout<<1<<endl;
+
+    }
+    return 0;
+}

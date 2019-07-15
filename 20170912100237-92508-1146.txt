@@ -1,0 +1,33 @@
+#include<iostream>
+#include<string.h>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+ int n;int i;int len;int b;
+ char x[55];
+ cin>>n;
+ getchar();
+ for(i=0;i<n;i++)
+ {
+gets(x);
+  len=strlen(x);
+  if(x[0]=='_' ||(x[0]>='A' && x[0]<='Z')||(x[0]>='a' && x[0]<='z'))
+  {
+   for(b=1;b<len;b++)
+   {
+    if((x[b]=='_' )||(x[b]>='A' && x[b]<='Z')||(x[b]>='a' && x[b]<='z')||(x[b]>='0'&&x[b]<='9'))
+     continue;
+    else
+     break;
+   }
+   if(b!=len)
+    cout<<"no"<<endl;
+   else
+    cout<<"yes"<<endl;
+  }
+  else
+   cout<<"no"<<endl;
+ }
+ return 0;
+}

@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;int i;
+    while(cin>>n)
+    {
+    int x[n];
+    if(n==0)break;
+    x[0]=1;
+    x[1]=2;
+    x[2]=3;
+    x[3]=4;
+    for(i=4;i<n;i++)
+    {
+        x[i]=x[i-1]+x[i-3];
+    }
+    cout<<x[n-1]<<endl;
+    }
+    return 0;
+}

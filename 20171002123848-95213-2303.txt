@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int r1,r2,c1,c2,d1,d2;int a,b,c,d;
+    while(scanf("%d",&r1)!=EOF)
+    {
+       scanf("%d",&r2);
+       scanf("%d",&c1);
+       scanf("%d",&c2);
+       scanf("%d",&d1);
+       scanf("%d",&d2);
+       a=(r1+c1-d2)/2;
+       b=r1-a;
+       c=c1-a;
+       d=c2-b;
+       if(a>0&&a<=9&&b>0&&b<=9&&c>0&&c<=9&&d>0&&d<=9&&a!=b&a!=c&&a!=d&&b!=c&&b!=d&&c!=d&&a+b==r1&&a+c==c1&&a+d==d1&&b+c==d2&&b+d==c2&&c+d==r2)
+       {printf("%d %d\n",a,b);
+        printf("%d %d\n",c,d);
+    }
+    else
+        printf("-1\n");
+}
+return 0;}

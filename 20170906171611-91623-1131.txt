@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    double n;int m;double x;int i;
+    while(cin>>n>>m)
+    {
+        x=n;
+        for(i=0;i<(m-1);i++)
+        {
+          n=sqrt(n);
+          x=x+n;
+        }
+        cout<<fixed<<setprecision(2)<<x<<endl;
+    }
+    return 0;
+}

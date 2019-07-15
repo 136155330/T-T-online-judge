@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main()
+{int a;
+while(cin>>a )
+{int b;
+b=-a;
+cout<<b<<endl;};
+return 0;
+}

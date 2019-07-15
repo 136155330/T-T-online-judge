@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<cstring>
+#include<iostream>
+char x[100];
+using namespace std;
+int main()
+{int a;int h;int z;int b;int o;int u;int n;int i;
+cin>>n;
+getchar();
+while(n--)
+{
+h=0;z=0;b=0;o=0;u=0;
+gets(x);
+    a=strlen(x);
+    for(i=0;i<a;i++)
+    {
+        if(x[i]=='a')h++;
+        else if(x[i]=='e')z++;
+        else if(x[i]=='i')b++;
+        else if(x[i]=='o')o++;
+        else if(x[i]=='u')u++;
+
+    }
+    cout<<"a:"<<h<<endl;
+    cout<<"e:"<<z<<endl;
+    cout<<"i:"<<b<<endl;
+    cout<<"o:"<<o<<endl;
+    cout<<"u:"<<u<<endl;
+    if(n!=0)cout<<endl;
+    else if(n==0)break;
+
+}
+return 0;
+}

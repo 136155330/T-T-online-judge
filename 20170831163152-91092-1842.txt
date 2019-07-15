@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{int a,i,j,t;
+while(cin>>a)
+{
+int x[a];
+for(i=0;i<a;i++)
+{cin>>x[i];
+}
+for(j=a-1;j!=0;j--)
+{for(i=0;i<j;i++)
+{if(x[i]>x[i+1])
+{t=x[i+1];
+x[i+1]=x[i];
+x[i]=t;
+}
+}
+}
+for(i=0;i<a;i++)
+{
+    cout<<x[i]<<" ";
+}
+cout<<endl;
+}
+return 0;
+}

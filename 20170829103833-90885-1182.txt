@@ -1,0 +1,13 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+double r;double x;
+while(cin>>r)
+{
+x=(4.0/3.0)*(3.14)*(r)*(r)*(r);
+cout<<fixed<<setprecision(6)<<x<<endl;
+}
+return 0;
+}
